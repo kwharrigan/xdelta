@@ -17,7 +17,7 @@ cmake_minimum_required(VERSION 2.6)
 project(cppbtree CXX)
 
 option(build_tests "Build B-tree tests" OFF)
-add_definitions(-std=c++11)
+add_definitions(-std=c++0x)
 set(CMAKE_CXX_FLAGS "-g -O2")
 
 # CMake doesn't have a way to pure template library, 

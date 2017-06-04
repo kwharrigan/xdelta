@@ -74,7 +74,7 @@ WFLAGS = -Wall -Wshadow -fno-builtin -Wextra -Wsign-compare \
  # -Wno-c++98-compat-pedantic
 
 C_WFLAGS = $(WFLAGS) -std=c99
-CXX_WFLAGS = $(WFLAGS) -std=c++11
+CXX_WFLAGS = $(WFLAGS) -std=c++0x
 
 common_CFLAGS = \
 	      -DREGRESSION_TEST=1 \
@@ -112,7 +112,7 @@ xdelta3regtest_CFLAGS = \
 xdelta3regtest_LDADD = -lm
 
 xdelta3checksum_CXXFLAGS = \
-	$(CXX_WFLAGS) $(common_CFLAGS) -DNOT_MAIN=1 -DXD3_MAIN=1 -std=c++11
+	$(CXX_WFLAGS) $(common_CFLAGS) -DNOT_MAIN=1 -DXD3_MAIN=1 -std=c++0x
 xdelta3checksum_CFLAGS = \
 	$(C_WFLAGS) $(common_CFLAGS) -DNOT_MAIN=1 -DXD3_MAIN=1
 
